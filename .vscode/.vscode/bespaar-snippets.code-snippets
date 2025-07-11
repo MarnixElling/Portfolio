@@ -1,0 +1,29 @@
+{
+	"Default component template": {
+		"prefix": "component",
+		"body": [
+			"<script setup lang=\"ts\">\n</script>\n\n<template>\n\t$0\n</template>\n"
+		],
+		"description": "Creates a bare component"
+	},
+	"Define props with default values": {
+		"prefix": ":dprops",
+		"body": [
+			"export interface Props {\n$1\n}\n\nconst props = withDefaults(defineProps<Props>(), {\n\t$2\n});\n"
+		],
+		"description": "Creates props withDefaults() function"
+	},
+	"Define props": {
+		"prefix": ":props",
+		"body": [
+			"export interface Props {\n$0\n}\n\nconst props = defineProps<Props>();\n"
+		],
+		"description": "Creates props withDefaults() function"
+	},
+	"Emits template": {
+		"prefix": "emits",
+		"body": [
+			"interface Emits {\n\t(event: '$1', $2 : $3 ): void;\n}\n\nconst emit = defineEmits<Emits>();"
+		]
+	},
+}

@@ -1,0 +1,18 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@helpers/*": ["helpers/*"],
+      "@stores/*": ["stores/*"],
+      "@public/*": ["public/*"],
+      "@assets/*": ["assets/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}
