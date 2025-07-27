@@ -53,11 +53,15 @@ useHead(
     <Meta name="theme-color" content="#ffffff" />
   </Head>
   <main class="max-w-8xl mx-auto w-full h-screen pt-12 bg-white dark:bg-black dark:!text-white">
-    <slot />
-
-    <Light :color="LightColors.PINK" class="-bottom-72 left-48" />
-    <Light :color="LightColors.PURPLE" class="-top-20 left-20" />
-    <Light :color="LightColors.YELLOW" class="top-20 right-[30%]" />
-    <Light :color="LightColors.BLUE" class="top-1/5 right-40" />
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+      <slot />
+    </div>
+    <!-- Background lights -->
+    <div aria-hidden="true" class="fixed w-screen h-screen overflow-hidden">
+      <Light :color="LightColors.PINK" class="-bottom-72 left-48" />
+      <Light :color="LightColors.PURPLE" class="-top-20 left-20" />
+      <Light :color="LightColors.YELLOW" class="top-20 right-[30%]" />
+      <Light :color="LightColors.BLUE" class="top-1/5 right-40" />
+    </div>
   </main>
 </template>

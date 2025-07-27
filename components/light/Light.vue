@@ -13,7 +13,7 @@ const instance = getCurrentInstance();
 </script>
 
 <template>
-  <div v-if="instance" class="absolute">
+  <div v-if="instance" class="absolute" aria-hidden="true">
     <svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect 
         opacity="0.5" 

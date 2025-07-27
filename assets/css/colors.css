@@ -3,8 +3,10 @@
   --color-transparent-white-200: rgba(241, 241, 243, 0.75);
 
   --color-transparent-dark: rgba(0, 0, 0, 0.1);
+  --color-transparent-dark-gray: rgba(217, 217, 217, 0.1);
   --color-transparent-gray: rgba(204, 204, 204, 0.2);
   --color-transparent-light: rgba(255, 255, 255, 0.5);
+  --color-transparent-light-gray: rgba(217, 217, 217, 0.5);
   --color-transparent-green: rgba(0, 220, 130, 0.75);
 
   --color-black: #000000;

@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import StacksCard from '@components/templates/StacksCard.vue';
+import ExperienceCard from '@components/templates/ExperienceCard.vue';
+import EducationCard from '@components/templates/EducationCard.vue';
 
 definePageMeta({
   name: 'Home',
@@ -10,8 +13,8 @@ definePageMeta({
 
 <template>
   <NuxtLayout>
-    <div>
-      hello world
-    </div>
+    <StacksCard />
+    <ExperienceCard />
+    <EducationCard />
   </NuxtLayout>
 </template>

@@ -7,16 +7,13 @@ body {
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: 600;
+  @apply !text-3xl !font-semibold;
 }
 
 h2 {
-  font-size: 1.25rem;
-  font-weight: 500;
+  @apply !text-xl !font-medium;
 }
 
 h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
+  @apply !text-lg !font-semibold;
 }

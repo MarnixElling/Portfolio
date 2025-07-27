@@ -19,8 +19,10 @@ export default {
         200: 'var(--color-transparent-white-200)',
       },
       'transparent-dark': 'var(--color-transparent-dark)',
+      'transparent-dark-gray': 'var(--color-transparent-dark-gray)',
       'transparent-gray': 'var(--color-transparent-gray)',
       'transparent-light': 'var(--color-transparent-light)',
+      'transparent-light-gray': 'var(--color-transparent-light-gray)',
       'transparent-green': 'var(--color-transparent-green)',
       black: 'var(--color-black)',
       gray: 'var(--color-gray)',
@@ -31,8 +33,8 @@ export default {
       purple: 'var(--color-purple)',
     },
     extend: {
-      backgroundImage: {
-        'radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      boxShadow: {
+        'card': '0px 4px 4px 0px rgba(0, 0, 0, 0.05)'
       },
       maxWidth: {
         '8xl': '1560px',

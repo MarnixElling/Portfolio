@@ -1,0 +1,23 @@
+<script setup lang="ts">
+import type { Experience } from '@assets/types';
+
+export interface Props {
+  experience: Experience;
+}
+
+defineProps<Props>();
+</script>
+
+<template>
+  <figure class="flex items-start gap-6">
+    <img :src="experience.img" :alt="experience.title" />
+    <figcaption class="flex flex-col gap-2">
+      <h3>{{ experience.title }}</h3>
+      <p>{{ experience.description }}</p>
+      <time datetime="" class="mt-1">
+        {{ experience.startDate }} - {{ experience.endDate }}
+      </time>
+      <slot />
+    </figcaption>
+  </figure>
+</template>
