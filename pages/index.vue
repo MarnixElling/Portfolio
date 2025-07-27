@@ -3,7 +3,7 @@
 definePageMeta({
   name: 'Home',
   title: 'Home',
-  description: 'Altijd het beste voor je geld',
+  description: 'Strong Medior Nuxt 3 (Vue 3 + TS + GraphQL) Frontend Developer | WCAG 2.1 & SEO-ready | Scalable UI Architecture',
   layout: 'default',
 });
 </script>
@@ -11,8 +11,7 @@ definePageMeta({
 <template>
   <NuxtLayout>
     <div>
-      hoi
-      <span class="text-3xl text-black">huh</span>
+      hello world
     </div>
   </NuxtLayout>
 </template>

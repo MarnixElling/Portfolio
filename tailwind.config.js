@@ -14,20 +14,31 @@ export default {
       'Satoshi': 'sans-serif',
     },
     colors: {
-      black: '#000000',
-      white: '#FFFFFF',
-      purple: '#330087',
-      green: '#00C784',
-      lightGreen: '#E5F4EB',
-      grey: {
-        100: 'var(--grey-100)',
-        300: 'var(--grey-300)',
-        500: 'var(--grey-500)',
-        700: 'var(--grey-700)',
-        900: 'var(--grey-900)',
+      'transparent-white': {
+        100: 'var(--color-transparent-white-100)',
+        200: 'var(--color-transparent-white-200)',
+      },
+      'transparent-dark': 'var(--color-transparent-dark)',
+      'transparent-gray': 'var(--color-transparent-gray)',
+      'transparent-light': 'var(--color-transparent-light)',
+      'transparent-green': 'var(--color-transparent-green)',
+      black: 'var(--color-black)',
+      gray: 'var(--color-gray)',
+      white: 'var(--color-white)',
+      pink: 'var(--color-pink)',
+      blue: 'var(--color-blue)',
+      yellow: 'var(--color-yellow)',
+      purple: 'var(--color-purple)',
+    },
+    extend: {
+      backgroundImage: {
+        'radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
+      maxWidth: {
+        '8xl': '1560px',
       },
     },
-    extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 };

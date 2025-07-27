@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import Light from '@components/light/Light.vue';
+
+import { LightColors } from '@assets/enums/theme';
 import { useRoute } from 'vue-router';
 import { useHead } from 'nuxt/app';
 
@@ -9,14 +12,14 @@ useHead(
     meta: [
       {
         name: 'og:title',
-        content: `${route.meta.title} | Bespaar.nl`,
+        content: `${route.meta.title} | Portfolio`,
       },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
       },
     ],
-    titleTemplate: '%s | Bespaar.nl',
+    titleTemplate: '%s | Portfolio',
   })),
 );
 </script>
@@ -49,7 +52,12 @@ useHead(
     <Meta name="msapplication-TileColor" content="#ffffff" />
     <Meta name="theme-color" content="#ffffff" />
   </Head>
-  <div>
-    <NuxtPage />
-  </div>
+  <main class="max-w-8xl mx-auto w-full h-screen pt-12 bg-white dark:bg-black dark:!text-white">
+    <slot />
+
+    <Light :color="LightColors.PINK" class="-bottom-72 left-48" />
+    <Light :color="LightColors.PURPLE" class="-top-20 left-20" />
+    <Light :color="LightColors.YELLOW" class="top-20 right-[30%]" />
+    <Light :color="LightColors.BLUE" class="top-1/5 right-40" />
+  </main>
 </template>
