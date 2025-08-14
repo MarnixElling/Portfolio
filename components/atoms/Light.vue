@@ -14,12 +14,12 @@ const instance = getCurrentInstance();
 
 <template>
   <div v-if="instance" class="absolute" aria-hidden="true">
-    <svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect 
         opacity="0.5" 
-        width="768" 
-        height="768" 
-        transform="matrix(-1 0 0 1 768 0)" 
+        width="788" 
+        height="788" 
+        transform="matrix(-1 0 0 1 788 0)" 
         :fill="`url(#paint0_radial_${instance.uid})`"
       />
       <defs>
@@ -29,9 +29,9 @@ const instance = getCurrentInstance();
           cy="0" 
           r="1" 
           gradientUnits="userSpaceOnUse" 
-          gradientTransform="translate(384 384) rotate(90) scale(384)"
+          gradientTransform="translate(344 344) rotate(90) scale(344)"
         >
-          <stop offset="0.134615" :stop-color="`var(--color-${color})`" stop-opacity="0.25"/>
+          <stop offset="0.134615" :stop-color="`var(--color-${color})`" stop-opacity="0.3"/>
           <stop offset="1" stop-color="white" stop-opacity="0"/>
         </radialGradient>
       </defs>

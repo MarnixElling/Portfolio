@@ -1,9 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from 'node:path';
 
 export default defineNuxtConfig({
-  devtools: {
-    enabled: true,
+  css: [
+    '@assets/css/style.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
+  build: {
+    transpile: ['@fortawesome/vue-fontawesome']
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {
+        config: resolve(__dirname, './tailwind.config.js')
+      },
+      autoprefixer: {}
+    }
   },
   alias: {
     '@assets': resolve(__dirname, './assets'),
@@ -13,23 +24,8 @@ export default defineNuxtConfig({
     '@stores': resolve(__dirname, './stores'),
     '@public': resolve(__dirname, './public'),
   },
-  css: [
-    '@assets/css/style.css',
-    '@fortawesome/fontawesome-svg-core/styles.css',
-  ],
-  postcss: {
-    plugins: {
-      tailwindcss: {
-        config: resolve(__dirname, './tailwind.config.js'),
-      },
-      autoprefixer: {},
-    },
-  },
   modules: ['@pinia/nuxt'],
-  fontawesome: {
-    icons: {
-      solid: ['faDownload'],
-      brands: ['faGithub', 'faLinkedin']
-    }
-  },
+  devtools: {
+    enabled: true
+  }
 });

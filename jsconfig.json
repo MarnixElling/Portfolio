@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
+      "@composables/*": ["composables/*"],
       "@layouts/*": ["layouts/*"],
       "@helpers/*": ["helpers/*"],
       "@stores/*": ["stores/*"],

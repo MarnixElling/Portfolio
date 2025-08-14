@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Card from '@components/card/Card.vue';
-import Divider from '@components/divider/Divider.vue';
-import StackList from '@components/stackList/StackList.vue';
+import Card from '@components/molecules/Card.vue';
+import Divider from '@components/atoms/Divider.vue';
+import StackList from '@components/molecules/StackList.vue';
 
 const coreStacks = [
   {

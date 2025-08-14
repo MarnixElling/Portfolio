@@ -4,6 +4,10 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  @apply dark:!text-white;
+  @apply dark:bg-black;
+  @apply transition-all;
+  @apply !duration-500;
 }
 
 h1 {

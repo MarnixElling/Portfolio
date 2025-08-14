@@ -4,7 +4,7 @@ import { ThemeOptions } from '@assets/enums';
 import { debounce } from '@composables/utils';
 
 const { selectedMode } = toRefs(useThemeStore());
-const { setTheme, setSelectedMode, setIsDarkModePreferedBySystem } = useThemeStore();
+const { setTheme, setIsDarkModePreferedBySystem } = useThemeStore();
 
 const systemPreference = ref<MediaQueryList | null>(null);
 
@@ -28,11 +28,11 @@ const detectDarkmodePreference = () => {
   });
 };
 
-onMounted(() => {
+onMounted(async () => {
   systemPreference.value = window.matchMedia('(prefers-color-scheme: dark)');
   const savedMode = localStorage.getItem('theme') as ThemeOptions | null;
 
-  setSelectedMode(savedMode ?? ThemeOptions.SYSTEM);
+  setTheme(savedMode ?? ThemeOptions.SYSTEM);
   detectDarkmodePreference();
 });
 </script>

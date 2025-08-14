@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SpecificationCard from '@components/specificationCard/SpecificationCard.vue';
+import SpecificationCard from '@components/atoms/SpecificationCard.vue';
 
 import type { Stack } from '@assets/types';
 

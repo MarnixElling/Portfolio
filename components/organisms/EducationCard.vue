@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import Card from '@components/card/Card.vue';
-import Divider from '@components/divider/Divider.vue';
+import Card from '@components/molecules/Card.vue';
+import Experience from '@components/atoms/Experience.vue';
+import Divider from '@components/atoms/Divider.vue';
 
 const experiences = [
   {

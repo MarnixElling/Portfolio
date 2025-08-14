@@ -26,4 +26,18 @@
 			"interface Emits {\n\t(event: '$1', $2 : $3 ): void;\n}\n\nconst emit = defineEmits<Emits>();"
 		]
 	},
+	"FontAwesome component import": {
+		"prefix": "fontawesome",
+		"body": [
+			"import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';"
+		],
+		"description": "Creates FontAwesome import"
+	},
+	"FontAwesome icon": {
+		"prefix": "icon",
+		"body": [
+			"<FontAwesomeIcon :icon=\"['$1', '$2']\" size=\"1x\" />"
+		],
+		"description": "Creates FontAwesome import"
+	},
 }
