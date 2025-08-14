@@ -33,6 +33,11 @@ export default {
       purple: 'var(--color-purple)',
     },
     extend: {
+      screens: {
+        '2xs': '320px',
+        'xs': '480px',
+        '3xl': '1920px',
+      },
       boxShadow: {
         'card': '0px 4px 4px 0px rgba(0, 0, 0, 0.05)'
       },

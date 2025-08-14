@@ -4,20 +4,17 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  @apply dark:!text-white;
-  @apply dark:bg-black;
-  @apply transition-all;
-  @apply !duration-500;
+  @apply !duration-500 !transition-all dark:!bg-black dark:!text-white text-sm lg:!text-base;
 }
 
 h1 {
-  @apply !text-3xl !font-semibold;
+  @apply !font-semibold !text-xl md:!text-2xl lg:!text-3xl;
 }
 
 h2 {
-  @apply !text-xl !font-medium;
+  @apply !font-medium !text-base md:!text-lg lg:!text-xl;
 }
 
 h3 {
-  @apply !text-lg !font-semibold;
+  @apply !font-semibold !text-sm md:!text-base lg:!text-lg;
 }

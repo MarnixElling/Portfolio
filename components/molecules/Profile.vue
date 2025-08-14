@@ -14,17 +14,17 @@ defineProps<Props>();
 </script>
 
 <template>
-  <article class="flex items-center gap-12">
-    <Avatar :avatar="profile.avatar" />
-    <header class="flex flex-col gap-3">
+  <article class="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12">
+    <Avatar :avatar="profile.avatar" class="size-16 xs:size-24 md:size-32 lg:size-40" />
+    <header class="flex flex-col gap-2 xs:gap-3">
       <h1>{{ profile.name }}</h1>
-      <p class="text-gray dark:text-white transition-all duration-500 text-2xl">{{ profile.role }}</p>
+      <p class="text-gray dark:text-white transition-all duration-500 text-sm xs:text-lg md:text-xl lg:text-2xl">{{ profile.role }}</p>
       <nav>
-        <ul class="flex items-center gap-6">
+        <ul class="flex items-center gap-2 xs:gap-6">
           <li v-for="social in profile.socials" :key="social.name">
-            <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline">
+            <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline text-xs md:text-sm lg:text-base">
               <IconWithText :text="social.name">
-                <FontAwesomeIcon :icon="['fab', social.icon]" class="text-2xl" />
+                <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
               </IconWithText>
             </a>
           </li>
