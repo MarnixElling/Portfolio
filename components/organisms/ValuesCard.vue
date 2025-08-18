@@ -45,7 +45,7 @@ const values = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-6 justify-between">
+  <div class="h-full flex flex-col gap-6 justify-between">
     <Profile :profile="profile" />
     <Card title="Core Values">
       <ul class="flex flex-col gap-3">

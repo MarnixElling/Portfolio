@@ -10,7 +10,7 @@ defineProps<Props>();
 
 <template>
   <figure class="flex items-start gap-6">
-    <img :src="experience.img" :alt="experience.title" />
+    <img :src="experience.img" :alt="experience.title" class="size-16 sm:size-24" />
     <figcaption class="flex flex-col gap-2">
       <h3>{{ experience.title }}</h3>
       <p>{{ experience.description }}</p>

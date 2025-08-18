@@ -1,6 +1,6 @@
 
 <template>
-  <article class="flex flex-col gap-6 max-h-full p-6 rounded-lg shadow-md backdrop-blur-xl transition-all bg-transparent-light dark:bg-transparent-dark">
+  <article class="flex flex-col gap-6 max-h-full rounded-lg shadow-md backdrop-blur-xl transition-all bg-transparent-light dark:bg-transparent-dark p-4 sm:h-full sm:p-6">
     <slot />
   </article>
 </template>

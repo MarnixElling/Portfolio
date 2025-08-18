@@ -16,7 +16,7 @@ const cards = [
 </script>
 
 <template>
-  <section class="w-full bg-transparent grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-rows-[50%_50%] xl:grid-cols-3">
+  <section class="w-full xl:h-[calc(100dvh-128px)] bg-transparent grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3">
     <columnWrapper v-for="(card, index) in cards" :key="index">
       <component :is="card" />
     </columnWrapper>

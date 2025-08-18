@@ -3,7 +3,7 @@ import ToggleDarkMode from '@components/organisms/ToggleDarkMode.vue';
 </script>
 
 <template>
-  <header class="my-6 max-w-8xl w-full mx-auto px-6 flex justify-end gap-6">
+  <header class="max-w-8xl w-full mx-auto flex justify-end gap-6 p-3 sm:p-6">
     <ToggleDarkMode />
   </header>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <figure class="flex bg-transparent-gray rounded-lg p-3 gap-3">
+  <figure class="flex bg-transparent-gray rounded-lg overflow-x-auto p-2 gap-2 sm:p-3 sm:gap-3">
     <slot />
   </figure>
 </template>

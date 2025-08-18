@@ -14,8 +14,8 @@ defineProps<Props>();
 </script>
 
 <template>
-  <article class="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12">
-    <Avatar :avatar="profile.avatar" class="size-16 xs:size-24 md:size-32 lg:size-40" />
+  <article class="flex items-center justify-between gap-4 xs:justify-start sm:gap-10 md:gap-4 lg:gap-12">
+    <Avatar :avatar="profile.avatar" class="size-16 xs:size-40 md:size-32 lg:size-40" />
     <header class="flex flex-col gap-2 xs:gap-3">
       <h1>{{ profile.name }}</h1>
       <p class="text-gray dark:text-white transition-all duration-500 text-sm xs:text-lg md:text-xl lg:text-2xl">{{ profile.role }}</p>
