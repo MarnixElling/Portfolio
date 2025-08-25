@@ -7,10 +7,6 @@ body {
   @apply !duration-500 !transition-all dark:!bg-black dark:!text-white text-sm lg:!text-base;
 }
 
-h1 {
-  @apply !font-semibold !text-xl md:!text-2xl lg:!text-3xl;
-}
-
 h2 {
   @apply !font-medium !text-base md:!text-lg lg:!text-xl;
 }

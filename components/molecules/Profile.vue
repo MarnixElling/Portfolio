@@ -14,22 +14,24 @@ defineProps<Props>();
 </script>
 
 <template>
-  <article class="flex items-center justify-between gap-4 xs:justify-start sm:gap-10 md:gap-4 lg:gap-12">
-    <Avatar :avatar="profile.avatar" class="size-16 xs:size-40 md:size-32 lg:size-40" />
-    <header class="flex flex-col gap-2 xs:gap-3">
-      <h1>{{ profile.name }}</h1>
-      <p class="text-gray dark:text-white transition-all duration-500 text-sm xs:text-lg md:text-xl lg:text-2xl">{{ profile.role }}</p>
-      <nav>
-        <ul class="flex items-center gap-2 xs:gap-6">
-          <li v-for="social in profile.socials" :key="social.name">
-            <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline text-xs md:text-sm lg:text-base">
-              <IconWithText :text="social.name">
-                <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
-              </IconWithText>
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <article class="flex items-center justify-between gap-2 xs:gap-4 xs:justify-start lg:gap-6">
+    <Avatar :avatar="profile.avatar" class="hidden h-12 2xs:block 2xs:h-16 xs:h-20" />
+    <header class="flex flex-col sm:gap-3">
+      <h1 class="font-semibold text-md xs:text-xl md:text-2xl lg:text-3xl">{{ profile.name }}</h1>
+      <div class="flex gap-2 flex-col sm:gap-6 sm:flex-row">
+        <p class="text-gray dark:text-white transition-all duration-500 text-sm xs:text-md md:text-lg lg:text-xl">{{ profile.role }}</p>
+        <nav>
+          <ul class="flex items-center gap-1 xs:flex-row xs:gap-6">
+            <li v-for="social in profile.socials" :key="social.name">
+              <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline text-xs md:text-sm lg:text-base">
+                <IconWithText :text="social.name">
+                  <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
+                </IconWithText>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   </article>
 </template>

@@ -3,6 +3,7 @@ import {
   faDownload,
   faSun,
   faMoon,
+  faArrowsUpDownLeftRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -17,4 +18,5 @@ export const getFontAwesomeIcons = () => [
   faLinkedin,
   faSun,
   faMoon,
+  faArrowsUpDownLeftRight,
 ];
