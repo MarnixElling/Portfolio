@@ -31,9 +31,11 @@ const saveAsPDF = () => {
 <template>
   <header class="max-w-8xl w-full mx-auto flex justify-between items-center p-3 sm:p-6 print:px-0">
     <Profile :profile="profile" />
-    <ToggleDarkMode />
-    <button @click="saveAsPDF">
-      Download CV
-    </button>
+    <div class="flex items-center gap-6">
+      <button @click="saveAsPDF" class="rounded-full bg-transparent-dark p-2 print:hidden">
+        Download CV
+      </button>
+      <ToggleDarkMode />
+    </div>
   </header>
 </template>
