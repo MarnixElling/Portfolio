@@ -10,7 +10,11 @@ const { setTheme } = useThemeStore();
 </script>
 
 <template>
-  <Toggle :model-value="isDark" @update:modelValue="setTheme(isDark ? ThemeOptions.LIGHT : ThemeOptions.DARK)">
+  <Toggle
+    :model-value="isDark"
+    class="print:!hidden"
+    @update:modelValue="setTheme(isDark ? ThemeOptions.LIGHT : ThemeOptions.DARK)"
+  >
     <FontAwesomeIcon :icon="['fas', isDark ? 'moon' : 'sun']" class="text-sm" />
   </Toggle>
 </template>

@@ -16,7 +16,7 @@ const props = defineProps<Props>();
   <CardWrapper>
     <CardHeader>
       {{ props.title }}
-      <button type="button">
+      <button type="button" class="print:hidden">
         <FontAwesomeIcon
           :icon="['fas', 'arrows-up-down-left-right']"
           class="transition-opacity duration-300 cursor-grab opacity-0 group-hover:opacity-100"

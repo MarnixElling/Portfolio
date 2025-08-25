@@ -20,7 +20,7 @@ defineProps<Props>();
       <h1 class="font-semibold text-md xs:text-xl md:text-2xl lg:text-3xl">{{ profile.name }}</h1>
       <div class="flex gap-2 flex-col sm:gap-6 sm:flex-row">
         <p class="text-gray dark:text-white transition-all duration-500 text-sm xs:text-md md:text-lg lg:text-xl">{{ profile.role }}</p>
-        <nav>
+        <nav class="print:hidden">
           <ul class="flex items-center gap-1 xs:flex-row xs:gap-6">
             <li v-for="social in profile.socials" :key="social.name">
               <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline text-xs md:text-sm lg:text-base">

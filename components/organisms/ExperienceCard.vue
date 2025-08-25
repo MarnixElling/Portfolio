@@ -64,7 +64,7 @@ const experiences = [
       <template v-for="(experience, index) in experiences" :key="experience.title">
         <li>
           <Experience :experience="experience">
-            <SpecificationCard class="w-fit mt-4">
+            <SpecificationCard class="w-fit mt-2 sm:mt-4">
               <template v-for="stack in experience.stacks" :key="stack.title">
                 <img :title="stack.title" :src="stack.img" :alt="stack.title" class="size-4 sm:size-6" />
               </template>

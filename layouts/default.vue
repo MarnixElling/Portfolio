@@ -53,7 +53,7 @@ useHead(
     <Meta name="theme-color" content="#ffffff" />
   </Head>
   <Header />
-  <main class="max-w-8xl mx-auto w-full p-3 sm:p-6">
+  <main class="max-w-8xl mx-auto w-full p-3 sm:p-6 print:p-0">
     <slot />
     <Lights />
   </main>

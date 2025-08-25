@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Card from '@components/molecules/Card.vue';
+import CardHeader from '@components/atoms/CardHeader.vue';
 import Divider from '@components/atoms/Divider.vue';
 import StackList from '@components/molecules/StackList.vue';
 
@@ -62,6 +63,7 @@ const toolingStacks = [
   <Card title="Core Stacks">
     <StackList :stacks="coreStacks" />
     <Divider />
+    <CardHeader>Tooling Stacks</CardHeader>
     <StackList :stacks="toolingStacks" />
   </Card>
 </template>

@@ -22,11 +22,18 @@ const profile = {
     },
   ],
 };
+
+const saveAsPDF = () => {
+  window.print();
+};
 </script>
 
 <template>
-  <header class="max-w-8xl w-full mx-auto flex justify-between items-center p-3 sm:p-6">
+  <header class="max-w-8xl w-full mx-auto flex justify-between items-center p-3 sm:p-6 print:px-0">
     <Profile :profile="profile" />
     <ToggleDarkMode />
+    <button @click="saveAsPDF">
+      Download CV
+    </button>
   </header>
 </template>

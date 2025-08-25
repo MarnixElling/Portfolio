@@ -3,18 +3,21 @@ import ColumnWrapper from '@components/atoms/ColumnWrapper.vue';
 import StacksCard from '@components/organisms/StacksCard.vue';
 import ExperienceCard from '@components/organisms/ExperienceCard.vue';
 import EducationCard from '@components/organisms/EducationCard.vue';
-import ValuesAndLanguageCard from '@components/organisms/ValuesAndLanguageCard.vue';
+import GeneralSkillsCard from '@components/organisms/GeneralSkillsCard.vue';
 
 const cards = [
   StacksCard,
   ExperienceCard,
-  ValuesAndLanguageCard,
+  GeneralSkillsCard,
   EducationCard,
 ];
 </script>
 
 <template>
-  <section class="w-full bg-transparent grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3 2xl:h-[calc(100dvh-128px)]">
+  <section
+    class="w-full bg-transparent grid grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3
+    2xl:h-[calc(100dvh-128px)] print:grid-cols-2 gap-6 print:gap-4"
+  >
     <ColumnWrapper v-for="(card, index) in cards" :key="index">
       <component :is="card" />
     </ColumnWrapper>

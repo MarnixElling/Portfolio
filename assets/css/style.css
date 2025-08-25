@@ -1,5 +1,6 @@
 @import './colors.css';
 @import './fontology.css';
+@import './global.css';
 
 @tailwind base;
 @tailwind components;
