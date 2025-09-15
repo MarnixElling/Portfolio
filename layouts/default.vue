@@ -69,7 +69,7 @@ useHead(
     </GreenButton>
     <ToggleDarkMode :model-value="isDark" @update:modelValue="setTheme(isDark ? ThemeOptions.LIGHT : ThemeOptions.DARK)" />
   </Header>
-  <main class="max-w-8xl mx-auto w-full p-3 sm:p-6 print:p-0">
+  <main class="max-w-8xl mx-auto w-full p-3 md:p-6 print:p-0">
     <slot />
     <Lights />
   </main>

@@ -22,7 +22,7 @@ const cards = [
     <ColumnWrapper
       v-for="(card, index) in cards"
       :key="index"
-      :class="{'col-span-2 print:hidden': index === cards.length - 1}"
+      :class="{'md:col-span-2 print:hidden': index === cards.length - 1}"
     >
       <component :is="card" />
     </ColumnWrapper>

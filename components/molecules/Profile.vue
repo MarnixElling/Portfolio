@@ -14,8 +14,8 @@ defineProps<Props>();
 </script>
 
 <template>
-  <article class="flex items-center justify-between gap-2 xs:gap-4 xs:justify-start lg:gap-6">
-    <Avatar :avatar="profile.avatar" class="hidden h-12 2xs:block 2xs:h-16 xs:h-20" />
+  <article class="flex items-center justify-between gap-2 2xs:gap-4 2xs:justify-start lg:gap-6">
+    <Avatar :avatar="profile.avatar" class="h-16 xs:h-20" />
     <header class="flex flex-col sm:gap-3">
       <h1 class="font-semibold text-md xs:text-xl md:text-2xl lg:text-3xl">{{ profile.name }}</h1>
       <div class="flex gap-2 flex-col sm:gap-6 sm:flex-row">
@@ -33,7 +33,7 @@ defineProps<Props>();
               >
                 <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
               </IconWithText>
-          </li>
+            </li>
           </ul>
         </nav>
       </div>

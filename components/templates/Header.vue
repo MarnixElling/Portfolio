@@ -24,9 +24,9 @@ const profile = {
 </script>
 
 <template>
-  <header class="max-w-8xl w-full mx-auto flex justify-between items-center p-3 sm:p-6 print:px-0">
+  <header class="max-w-8xl w-full mx-auto flex justify-between gap-4 p-3 flex-col md:p-6 md:items-center md:flex-row print:px-0">
     <Profile :profile="profile" />
-    <div class="flex items-center gap-6">
+    <div class="flex items-center gap-6 justify-between md:justify-start">
       <slot />
     </div>
   </header>
