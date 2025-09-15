@@ -1,11 +1,21 @@
 <script lang="ts" setup>
 import Lights from '@components/templates/Lights.vue';
 import Header from '@components/templates/Header.vue';
+import GreenButton from '@components/molecules/GreenButton.vue';
+import ToggleDarkMode from '@components/templates/ToggleDarkMode.vue';
 
+import { ThemeOptions } from '@assets/enums';
 import { useRoute } from 'vue-router';
 import { useHead } from 'nuxt/app';
+import { useThemeStore } from '@stores/useThemeStore';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+const { isDark } = toRefs(useThemeStore());
+const { setTheme } = useThemeStore();
 
 const route = useRoute();
+
+const saveAsPDF = () => window.print();
 
 useHead(
   computed(() => ({
@@ -52,7 +62,13 @@ useHead(
     <Meta name="msapplication-TileColor" content="#ffffff" />
     <Meta name="theme-color" content="#ffffff" />
   </Head>
-  <Header />
+  <Header>
+    <GreenButton @click="saveAsPDF">
+      Bewaar CV
+      <FontAwesomeIcon :icon="['fas', 'file-pdf']" />
+    </GreenButton>
+    <ToggleDarkMode :model-value="isDark" @update:modelValue="setTheme(isDark ? ThemeOptions.LIGHT : ThemeOptions.DARK)" />
+  </Header>
   <main class="max-w-8xl mx-auto w-full p-3 sm:p-6 print:p-0">
     <slot />
     <Lights />

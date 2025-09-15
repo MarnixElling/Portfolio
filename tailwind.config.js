@@ -14,6 +14,12 @@ export default {
       'Satoshi': 'sans-serif',
     },
     colors: {
+      'green': {
+        300: 'var(--color-green-300)',
+        500: 'var(--color-green-500)',
+        700: 'var(--color-green-700)',
+        900: 'var(--color-green-900)',
+      },
       'transparent-white': {
         100: 'var(--color-transparent-white-100)',
         200: 'var(--color-transparent-white-200)',
@@ -23,7 +29,6 @@ export default {
       'transparent-gray': 'var(--color-transparent-gray)',
       'transparent-light': 'var(--color-transparent-light)',
       'transparent-light-gray': 'var(--color-transparent-light-gray)',
-      'transparent-green': 'var(--color-transparent-green)',
       black: 'var(--color-black)',
       gray: 'var(--color-gray)',
       white: 'var(--color-white)',

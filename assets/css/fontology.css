@@ -4,13 +4,14 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 14px;
   @apply !duration-500 !transition-all dark:!bg-black dark:!text-white text-sm lg:!text-base;
 }
 
 h2 {
-  @apply !font-medium !text-base md:!text-lg lg:!text-xl;
+  @apply !font-medium !text-sm md:!text-base lg:!text-lg;
 }
 
 h3 {
-  @apply !font-semibold !text-sm md:!text-base lg:!text-lg;
+  @apply !font-semibold !text-xs md:!text-sm lg:!text-base;
 }

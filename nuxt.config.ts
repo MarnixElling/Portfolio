@@ -19,8 +19,8 @@ export default defineNuxtConfig({
   alias: {
     '@assets': resolve(__dirname, './assets'),
     '@components': resolve(__dirname, './components'),
-    '@layouts': resolve(__dirname, './layouts'),
     '@composables': resolve(__dirname, './composables'),
+    '@layouts': resolve(__dirname, './layouts'),
     '@stores': resolve(__dirname, './stores'),
     '@public': resolve(__dirname, './public'),
   },

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import StorybookCard from '@components/organisms/StorybookCard.vue';
 import ColumnWrapper from '@components/atoms/ColumnWrapper.vue';
 import StacksCard from '@components/organisms/StacksCard.vue';
 import ExperienceCard from '@components/organisms/ExperienceCard.vue';
@@ -10,15 +11,19 @@ const cards = [
   ExperienceCard,
   GeneralSkillsCard,
   EducationCard,
+  StorybookCard,
 ];
 </script>
 
 <template>
   <section
-    class="w-full bg-transparent grid grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3
-    2xl:h-[calc(100dvh-128px)] print:grid-cols-2 gap-6 print:gap-4"
+    class="w-full bg-transparent grid grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3 print:grid-cols-2 gap-6 print:gap-4"
   >
-    <ColumnWrapper v-for="(card, index) in cards" :key="index">
+    <ColumnWrapper
+      v-for="(card, index) in cards"
+      :key="index"
+      :class="{'col-span-2 print:hidden': index === cards.length - 1}"
+    >
       <component :is="card" />
     </ColumnWrapper>
   </section>

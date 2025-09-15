@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { getCurrentInstance } from 'vue';
 import { LightColors } from '@assets/enums';
 
 interface Props {

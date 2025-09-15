@@ -1,3 +1,9 @@
+*:focus {
+  outline: 2px solid var(--color-white) !important;
+  box-shadow: 0 0 0 4px var(--color-purple) !important;
+  border-radius: 4px;
+}
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;

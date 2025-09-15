@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Profile from '@components/molecules/Profile.vue';
-import ToggleDarkMode from '@components/organisms/ToggleDarkMode.vue';
 
 const profile = {
   name: 'Marnix Elling',
@@ -22,20 +21,13 @@ const profile = {
     },
   ],
 };
-
-const saveAsPDF = () => {
-  window.print();
-};
 </script>
 
 <template>
   <header class="max-w-8xl w-full mx-auto flex justify-between items-center p-3 sm:p-6 print:px-0">
     <Profile :profile="profile" />
     <div class="flex items-center gap-6">
-      <button @click="saveAsPDF" class="rounded-full bg-transparent-dark p-2 print:hidden">
-        Download CV
-      </button>
-      <ToggleDarkMode />
+      <slot />
     </div>
   </header>
 </template>

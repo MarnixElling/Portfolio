@@ -7,7 +7,11 @@
   --color-transparent-gray: rgba(204, 204, 204, 0.2);
   --color-transparent-light: rgba(255, 255, 255, 0.5);
   --color-transparent-light-gray: rgba(217, 217, 217, 0.5);
-  --color-transparent-green: rgba(0, 220, 130, 0.75);
+
+  --color-green-300: rgba(142, 255, 208, 0.75);
+  --color-green-500: rgba(48, 250, 166, 0.75);
+  --color-green-700: rgba(0, 220, 130, 0.75);
+  --color-green-900: rgba(0, 173, 101, 0.75);
 
   --color-black: #000000;
   --color-gray: #58596B;
@@ -16,5 +20,4 @@
   --color-blue: #3DB3FD;
   --color-yellow: #FDF83D;
   --color-purple: #433DFD;
-  
 }

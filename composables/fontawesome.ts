@@ -1,6 +1,6 @@
 
 import {
-  faDownload,
+  faFilePdf,
   faSun,
   faMoon,
   faArrowsUpDownLeftRight,
@@ -13,7 +13,7 @@ import {
 
 
 export const getFontAwesomeIcons = () => [
-  faDownload,
+  faFilePdf,
   faGithub,
   faLinkedin,
   faSun,

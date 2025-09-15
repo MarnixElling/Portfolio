@@ -23,12 +23,17 @@ defineProps<Props>();
         <nav class="print:hidden">
           <ul class="flex items-center gap-1 xs:flex-row xs:gap-6">
             <li v-for="social in profile.socials" :key="social.name">
-              <a :href="social.url" target="_blank" rel="noopener noreferrer" class="underline text-xs md:text-sm lg:text-base">
-                <IconWithText :text="social.name">
-                  <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
-                </IconWithText>
-              </a>
-            </li>
+              <IconWithText
+                :href="social.url"
+                :text="social.name"
+                is="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-xs md:text-sm lg:text-base"
+              >
+                <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
+              </IconWithText>
+          </li>
           </ul>
         </nav>
       </div>

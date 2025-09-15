@@ -1,16 +1,20 @@
 <script setup lang="ts">
 export interface Props {
-  img?: string;
   text: string;
+  img?: string;
+  is?: 'div' | 'p' | 'span' | 'li' | 'a' | 'p';
 }
 
-defineProps<Props>();
+withDefaults(defineProps<Props>(), {
+  img: undefined,
+  is: 'p',
+});
 </script>
 
 <template>
-  <p class="flex items-center gap-2 break-all">
+  <component :is="is" class="flex items-center gap-2 break-all">
     <img v-if="img" :src="img" :alt="text" aria-hidden class="size-6" />
     <slot />
     {{ text }}
-  </p>
+  </component>
 </template>
