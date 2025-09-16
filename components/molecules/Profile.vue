@@ -25,13 +25,13 @@ defineProps<Props>();
             <li v-for="social in profile.socials" :key="social.name">
               <IconWithText
                 :href="social.url"
-                :text="social.name"
                 is="a"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="underline text-xs md:text-sm lg:text-base"
               >
                 <FontAwesomeIcon :icon="['fab', social.icon]" class="text-lg md:text-xl lg:text-2xl" />
+                {{ social.name }}
               </IconWithText>
             </li>
           </ul>

@@ -63,7 +63,7 @@ useHead(
     <Meta name="theme-color" content="#ffffff" />
   </Head>
   <Header>
-    <GreenButton @click="saveAsPDF">
+    <GreenButton @click="saveAsPDF" class="print:hidden">
       Bewaar CV
       <FontAwesomeIcon :icon="['fas', 'file-pdf']" />
     </GreenButton>

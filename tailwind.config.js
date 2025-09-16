@@ -22,6 +22,7 @@ export default {
       },
       'transparent-white': {
         100: 'var(--color-transparent-white-100)',
+        150: 'var(--color-transparent-white-150)',
         200: 'var(--color-transparent-white-200)',
       },
       'transparent-dark': 'var(--color-transparent-dark)',

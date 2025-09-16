@@ -8,15 +8,15 @@ import Language from '@components/atoms/Language.vue';
 const values = [
   {
     img: '/emojis/bricks.png',
-    description: 'Scalable UI Architecture (smart/dumb splits, nuxtlayers)',
+    description: 'Scalable UI Architecture',
   },
   {
     img: '/emojis/wand.png',
-    description: 'Perfomance + Readability',
+    description: 'Performance and Readability',
   },
   {
     img: '/emojis/search.png',
-    description: 'SEO (HTML5 semantics & structured markup)',
+    description: 'Search Engine Optimization',
   },
   {
     img: '/emojis/wheelchair.png',
@@ -39,10 +39,13 @@ const languages = [
 </script>
 
 <template>
-  <Card title="Algemene vaardigheden">
-    <ul class="flex flex-col gap-3">
-      <li v-for="(value, index) in values" :key="index" class="font-medium">
-        <IconWithText :img="value.img" :text="value.description" />
+  <Card title="Specialiteiten">
+    <ul class="flex flex-col gap-4">
+      <li v-for="(value, index) in values" :key="index">
+        <IconWithText>
+          <img :src="value.img" :alt="value.description" aria-hidden class="size-6" />
+          {{ value.description }}
+        </IconWithText>
       </li>
     </ul>
     <Divider />

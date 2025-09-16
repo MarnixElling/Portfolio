@@ -4,8 +4,11 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 14px;
   @apply !duration-500 !transition-all dark:!bg-black dark:!text-white text-sm lg:!text-base;
+}
+
+* {
+  @apply text-sm xl:text-base;
 }
 
 h2 {

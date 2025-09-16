@@ -5,7 +5,7 @@ import { LightColors } from '@assets/enums/theme'
 </script>
 
 <template>
-  <div aria-hidden="true" class="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-10">
+  <div aria-hidden="true" class="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-10 print:hidden">
     <div class="floating absolute" style="top: 0%; left: 5%;">
       <Light :color="LightColors.PINK" />
     </div>
