@@ -17,7 +17,7 @@ const cards = [
 
 <template>
   <section
-    class="w-full bg-transparent grid grid-cols-1 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3 print:grid-cols-2 gap-6 print:gap-4"
+    class="w-full bg-transparent grid gap-3 grid-cols-1 md:gap-6 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-3 print:grid-cols-2 print:gap-4"
   >
     <ColumnWrapper
       v-for="(card, index) in cards"

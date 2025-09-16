@@ -11,8 +11,6 @@ definePageMeta({
 
 <template>
   <NuxtLayout>
-    <div class="h-full">
-      <Grid />
-    </div>
+    <Grid />
   </NuxtLayout>
 </template>
