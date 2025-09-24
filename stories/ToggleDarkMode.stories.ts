@@ -12,4 +12,19 @@ type Story = StoryObj<typeof ToggleDarkMode>
 
 export const Default: Story = {
   args: {},
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <Toggle
+            :model-value="modelValue"
+            class="print:!hidden"
+            @update:modelValue="emit('update:modelValue')"
+          >
+            <FontAwesomeIcon :icon="['fas', modelValue ? 'moon' : 'sun']" class="text-sm" />
+          </Toggle>
+        </template>`,
+      },
+    },
+  },
 };

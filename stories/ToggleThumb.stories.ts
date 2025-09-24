@@ -27,4 +27,15 @@ export const Default: Story = {
     },
     template: '<ToggleThumb v-html="args.default"></ToggleThumb>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <span class="transition-all grid place-items-center size-6 rounded-full bg-white dark:bg-black">
+            <slot />
+          </span>
+        </template>`,
+      },
+    },
+  },
 };

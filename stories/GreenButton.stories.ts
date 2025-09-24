@@ -36,4 +36,22 @@ export const Default: Story = {
     },
     template: '<GreenButton v-bind="args" v-html="args.default"></GreenButton>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <Button
+            :type="props.type"
+            :disabled="props.disabled"
+            class="font-semibold rounded-lg text-white bg-green-700
+            hover:bg-green-500
+            active:bg-green-900
+            disabled:cursor-not-allowed disabled:bg-transparent-light-gray"
+          >
+            <slot />
+          </Button>
+        </template>`,
+      },
+    },
+  },
 };

@@ -32,4 +32,17 @@ export const Default: Story = {
     },
     template: '<NavWrapper v-bind="args" v-html="args.default"></NavWrapper>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <nav>
+            <ul class="flex items-center gap-1 xs:gap-6" :class="{'flex-col': direction === 'column'}">
+              <slot />
+            </ul>
+          </nav>
+        </template>`,
+      },
+    },
+  },
 };

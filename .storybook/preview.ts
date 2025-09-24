@@ -14,16 +14,6 @@ const preview: Preview = {
     controls: { matchers: { color: /(background|color)$/i, date: /Date$/i } },
     a11y: { test: 'todo' },
   },
-  decorators: [
-    (Story, context) => ({
-      setup() {
-        const isDark = context.globals?.darkMode === 'dark';
-        return { isDark };
-      },
-      template: `<div><story/></div>`,
-      components: { story: Story },
-    }),
-  ],
 };
 
 export default preview;

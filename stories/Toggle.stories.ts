@@ -31,4 +31,29 @@ export const Default: Story = {
     },
     template: '<Toggle v-bind="args" v-html="args.default"></Toggle>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <ToggleWrapper
+            :aria-pressed="modelValue"
+            :class="{
+              'bg-transparent-dark': !modelValue,
+              'bg-transparent-light-gray': modelValue,
+            }"
+            @click="emit('update:modelValue')"
+          >
+            <ToggleThumb
+              :class="{
+                'ml-0': !modelValue,
+                'ml-8': modelValue,
+              }"
+            >
+              <slot />
+            </ToggleThumb>
+          </ToggleWrapper>
+        </template>`,
+      },
+    },
+  },
 };

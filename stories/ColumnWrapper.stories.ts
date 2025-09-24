@@ -27,4 +27,17 @@ export const Default: Story = {
     },
     template: '<ColumnWrapper v-html="args.default"></ColumnWrapper>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <div
+            class="h-full bg-transparent"
+          >
+            <slot />
+          </div>
+        </template>`,
+      },
+    },
+  },
 };

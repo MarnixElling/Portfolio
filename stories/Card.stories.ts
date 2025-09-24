@@ -31,4 +31,20 @@ export const Default: Story = {
     },
     template: '<Card v-bind="args" v-html="args.default"></Card>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <CardWrapper>
+            <CardHeader>
+              {{ props.title }}
+            </CardHeader>
+            <CardBody>
+              <slot />
+            </CardBody>
+          </CardWrapper>
+        </template>`,
+      },
+    },
+  },
 };

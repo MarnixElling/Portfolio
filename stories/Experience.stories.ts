@@ -25,4 +25,23 @@ export const Default: Story = {
       endDate: 'Present',
     },
   },
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <figure class="flex items-start gap-6">
+            <img :src="experience.img" :alt="experience.title" class="size-12 2xs:size-16 print:size-12" />
+            <figcaption class="flex flex-col sm:gap-2">
+              <h3>{{ experience.title }}</h3>
+              <p>{{ experience.description }}</p>
+              <time datetime="" class="text-gray dark:text-white print:!text-gray transition-all duration-500 mt-1">
+                {{ experience.startDate }} - {{ experience.endDate }}
+              </time>
+              <slot />
+            </figcaption>
+          </figure>
+        </template>`,
+      },
+    },
+  },
 };

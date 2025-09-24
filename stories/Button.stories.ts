@@ -36,4 +36,19 @@ export const Default: Story = {
     },
     template: '<Button v-bind="args" v-html="args.default"></Button>',
   }),
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <button
+            :type="props.type"
+            :disabled="props.disabled"
+            class="transition-all flex items-center gap-3 p-3"
+          >
+            <slot />
+          </button>
+        </template>`,
+      },
+    },
+  },
 };

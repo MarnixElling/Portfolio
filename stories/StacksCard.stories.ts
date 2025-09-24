@@ -12,4 +12,18 @@ type Story = StoryObj<typeof StacksCard>
 
 export const Default: Story = {
   args: {},
+  parameters: {
+    docs: {
+      source: {
+        code: `<template>
+          <Card title="Core Stacks">
+            <StackList :stacks="coreStacks" />
+            <Divider />
+            <CardHeader>Tooling Stacks</CardHeader>
+            <StackList :stacks="toolingStacks" />
+          </Card>
+        </template>`,
+      },
+    },
+  },
 };
