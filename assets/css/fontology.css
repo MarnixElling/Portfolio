@@ -4,7 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  @apply !duration-500 !transition-all dark:!bg-black dark:!text-white text-sm lg:!text-base;
+  @apply !duration-500 !transition-all dark:!bg-black dark:text-white print:!text-black text-sm lg:!text-base;
 }
 
 * {

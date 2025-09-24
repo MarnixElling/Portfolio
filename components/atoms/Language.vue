@@ -12,6 +12,6 @@ defineProps<Props>();
   <dl class="flex gap-1 items-center text-sm">
     <img :src="language.img" :alt="language.name" :title="language.name" aria-hidden class="size-6 mr-2" />
     <dt class="font-medium">{{ language.name }}</dt>
-    <dd class="text-gray dark:text-white transition-all duration-500"> - {{ language.level }}</dd>
+    <dd class="text-gray dark:text-white print:!text-gray transition-all duration-500"> - {{ language.level }}</dd>
   </dl>
 </template>

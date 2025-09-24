@@ -6,8 +6,11 @@ const meta: Meta<typeof Avatar> = {
   component: Avatar,
   tags: ['autodocs'],
   argTypes: {
-    avatar: {
-      control: 'object',
+    img: {
+      control: 'text',
+    },
+    alt: {
+      control: 'text',
     },
   },
 };
@@ -17,9 +20,7 @@ type Story = StoryObj<typeof Avatar>
 
 export const Default: Story = {
   args: {
-    avatar: {
-      img: '/avatars/marnix.png',
-      alt: 'Marnix Elling',
-    },
+    img: '/avatars/marnix.png',
+    alt: 'Marnix Elling',
   },
 };

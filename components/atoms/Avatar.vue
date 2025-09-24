@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import type { Avatar } from '@assets/types';
-
 export interface Props {
-  avatar: Avatar;
+  img: string;
+  alt: string;
 }
 
 defineProps<Props>();
@@ -10,9 +9,9 @@ defineProps<Props>();
 
 <template>
   <img
-    :src="avatar.img"
-    :alt="avatar.alt"
-    :title="avatar.alt"
+    :src="img"
+    :alt="alt"
+    :title="alt"
     class="rounded-full max-w-40 max-h-40 object-cover object-center shadow-md"
   />
 </template>

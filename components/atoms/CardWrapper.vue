@@ -4,7 +4,7 @@
     transition-all bg-transparent-light
     dark:bg-transparent-dark
     sm:h-full sm:p-6
-    print:p-4 print:gap-4 print:shadow-none print:bg-transparent-white-150"
+    print:p-4 print:gap-4 print:shadow-none print:!bg-transparent-white-150"
   >
     <slot />
   </article>
