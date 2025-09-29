@@ -9,8 +9,8 @@ const experiences = [
     title: 'Front-endontwikkelaar (medior)',
     description: 'Mogelijk BV - Fulltime',
     img: '/experiences/mogelijk.png',
-    startDate: 'apr. 2022',
-    endDate: 'heden (3 jaar en 4 maanden)',
+    startDate: new Date('2022-04-01'),
+    endDate: new Date(),
     stacks: [
       {
         title: 'Vue.js',
@@ -38,8 +38,8 @@ const experiences = [
     title: 'Front-endontwikkelaar (stagiar)',
     description: 'Levarne - Fulltime',
     img: '/experiences/levarne.png',
-    startDate: 'sep. 2020',
-    endDate: 'apr. 2021 (8 maanden)',
+    startDate: new Date('2020-09-01'),
+    endDate: new Date('2021-04-01'),
     stacks: [
       {
         title: 'Vue.js',

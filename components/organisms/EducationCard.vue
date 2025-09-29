@@ -8,15 +8,15 @@ const experiences = [
     title: 'Hogeschool van Amsterdam',
     description: 'propedeuse, ICT- en mediabeheer',
     img: '/experiences/hva.png',
-    startDate: 'sep. 2020',
-    endDate: 'jul. 2021',
+    startDate: new Date('2020-09-01'),
+    endDate: new Date('2021-07-01'),
   },
   {
     title: 'Grafisch Lyceum Utrecht',
     description: 'mediadeveloper, ICT- en mediabeheer',
     img: '/experiences/glu.png',
-    startDate: 'sep. 2016',
-    endDate: 'jul. 2020',
+    startDate: new Date('2016-09-01'),
+    endDate: new Date('2020-07-01'),
   },
 ];
 </script>

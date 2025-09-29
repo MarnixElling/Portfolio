@@ -15,7 +15,8 @@ defineProps<Props>();
       <h3>{{ experience.title }}</h3>
       <p>{{ experience.description }}</p>
       <time datetime="" class="text-gray dark:text-white print:!text-gray transition-all duration-500 mt-1">
-        {{ experience.startDate }} - {{ experience.endDate }}
+        {{ formatDateMonthYear(experience.startDate) }} - {{ formatDateMonthYear(experience.endDate) }}
+        ({{ formatDateDifferenceYearsMonths(experience.startDate, experience.endDate) }})
       </time>
       <slot />
     </figcaption>
