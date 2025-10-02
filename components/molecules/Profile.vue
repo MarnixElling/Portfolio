@@ -36,6 +36,7 @@ defineProps<Props>();
           </li>
         </NavWrapper>
       </div>
+      <p class="hidden print:block print:text-gray print:italic">lees meer op www.marnixelling.dev</p>
     </div>
   </article>
 </template>

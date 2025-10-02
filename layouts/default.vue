@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import Card from '@components/molecules/Card.vue';
 import Lights from '@components/templates/Lights.vue';
 import Header from '@components/templates/Header.vue';
 import GreenButton from '@components/molecules/GreenButton.vue';
