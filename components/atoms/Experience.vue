@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { formatDateDifferenceYearsMonths, formatDateMonthYear } from '@composables/dates';
+
 import type { Experience } from '@assets/types';
 
 export interface Props {

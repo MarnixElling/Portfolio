@@ -7,8 +7,8 @@ export interface Experience {
   title: string;
   description: string;
   img: string;
-  startDate: string;
-  endDate: string;
+  startDate: Date | string;
+  endDate: Date | string;
   stacks?: Stack[];
 }
 
