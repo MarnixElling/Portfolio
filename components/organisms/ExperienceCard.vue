@@ -10,7 +10,7 @@ const experiences = [
     description: 'Mogelijk BV - Fulltime',
     img: '/experiences/mogelijk.png',
     startDate: new Date('2022-04-01'),
-    endDate: new Date(),
+    endDate: new Date('2025-11-30'),
     stacks: [
       {
         title: 'Vue.js',
