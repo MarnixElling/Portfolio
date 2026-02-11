@@ -26,6 +26,10 @@ const coreStacks = [
     img: '/logos/tailwind.png',
   },
   {
+    title: 'Sass',
+    img: '/logos/sass.png',
+  },
+  {
     title: 'HTML5',
     img: '/logos/html5.png',
   },

@@ -6,6 +6,39 @@ import SpecificationCard from '@components/atoms/SpecificationCard.vue';
 
 const experiences = [
   {
+    title: 'Front-endontwikkelaar',
+    description: 'Cowmanager - Fulltime',
+    img: '/experiences/cowmanager.png',
+    startDate: new Date('2025-12-01'),
+    endDate: new Date(),
+    stacks: [
+      {
+        title: 'Vue.js',
+        img: '/logos/vue.png',
+      },
+      {
+        title: 'Nuxt.js',
+        img: '/logos/nuxt.png',
+      },
+      {
+        title: 'JavaScript',
+        img: '/logos/javascript.png',
+      },
+      {
+        title: 'TypeScript',
+        img: '/logos/typescript.png',
+      },
+      {
+        title: 'Tailwind CSS',
+        img: '/logos/tailwind.png',
+      },
+      {
+        title: 'Sass',
+        img: '/logos/sass.png',
+      }
+    ],
+  },
+  {
     title: 'Front-endontwikkelaar (medior)',
     description: 'Mogelijk BV - Fulltime',
     img: '/experiences/mogelijk.png',

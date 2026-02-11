@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { formatDateDifferenceYearsMonths, formatDateMonthYear } from '@composables/dates';
+import { formatDateDifferenceYearsMonths, formatDateMonthYear, isToday } from '@composables/dates';
 
 import type { Experience } from '@assets/types';
 
@@ -7,7 +7,11 @@ export interface Props {
   experience: Experience;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const endDateToShow = computed(() => (
+  isToday(props.experience.endDate) ? 'Heden' : formatDateMonthYear(props.experience.endDate)
+));
 </script>
 
 <template>
@@ -16,10 +20,16 @@ defineProps<Props>();
     <figcaption class="flex flex-col sm:gap-2">
       <h3>{{ experience.title }}</h3>
       <p>{{ experience.description }}</p>
-      <time datetime="" class="text-gray dark:text-white print:!text-gray transition-all duration-500 mt-1">
-        {{ formatDateMonthYear(experience.startDate) }} - {{ formatDateMonthYear(experience.endDate) }}
+      <span class="text-gray dark:text-white print:!text-gray transition-all duration-500 mt-1">
+        <time :datetime="experience.startDate.toISOString()" class="capitalize">
+          {{ formatDateMonthYear(experience.startDate) }}
+        </time>
+        -
+        <time :datetime="experience.endDate.toISOString()" class="capitalize">
+          {{ endDateToShow }}
+        </time>
         ({{ formatDateDifferenceYearsMonths(experience.startDate, experience.endDate) }})
-      </time>
+      </span>
       <slot />
     </figcaption>
   </figure>

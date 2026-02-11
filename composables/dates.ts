@@ -19,3 +19,14 @@ export const formatDateDifferenceYearsMonths = (startDate: Date | string, endDat
 
   return [yearStr, monthStr].filter(Boolean).join(' en ');
 };
+
+// Validators
+export const isToday = (date: Date) => {
+  const now = new Date();
+
+  return (
+    date.getFullYear() === now.getFullYear() &&
+    date.getMonth() === now.getMonth() &&
+    date.getDate() === now.getDate()
+  );
+};
