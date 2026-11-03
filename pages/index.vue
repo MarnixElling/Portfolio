@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import StorybookCard from '@components/organisms/StorybookCard.vue';
 import StacksCard from '@components/organisms/StacksCard.vue';
-import ExperienceCard from '@components/organisms/ExperienceCard.vue';
+import ExperienceCard from '@components/organisms/ExperienceCard/ExperienceCard.vue';
 import EducationCard from '@components/organisms/EducationCard.vue';
 import GeneralSkillsCard from '@components/organisms/GeneralSkillsCard.vue';
 
@@ -15,12 +15,12 @@ definePageMeta({
 
 <template>
   <NuxtLayout>
-    <div class="flex gap-6 relative flex-col md:flex-row print:flex-row">
+    <div class="flex gap-6 relative flex-col md:flex-row print:flex-col">
       <div
         class="
-          flex flex-col h-fit gap-6
+          flex flex-col h-fit gap-6 grow-0 shrink
           md:sticky md:top-0 md:basis-11/12 lg:basis-1/2
-          print:basis-1/2
+          print:h-min
         "
       >
         <ExperienceCard />

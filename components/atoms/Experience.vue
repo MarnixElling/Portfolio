@@ -17,7 +17,7 @@ const endDateToShow = computed(() => (
 <template>
   <figure class="flex items-start gap-6">
     <img :src="experience.img" :alt="experience.title" class="size-12 2xs:size-16 print:size-12" />
-    <figcaption class="flex flex-col sm:gap-2">
+    <figcaption class="flex flex-col sm:gap-2 print:gap-0">
       <h3>{{ experience.title }}</h3>
       <p>{{ experience.description }}</p>
       <span class="text-gray dark:text-white print:!text-gray transition-all duration-500 mt-1">
@@ -30,7 +30,7 @@ const endDateToShow = computed(() => (
         </time>
         ({{ formatDateDifferenceYearsMonths(experience.startDate, experience.endDate) }})
       </span>
-      <slot />
     </figcaption>
+    <slot />
   </figure>
 </template>
