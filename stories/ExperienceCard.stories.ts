@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import ExperienceCard from '@components/organisms/ExperienceCard.vue'
+import ExperienceCard from '@components/organisms/ExperienceCard/ExperienceCard.vue'
 
 const meta: Meta<typeof ExperienceCard> = {
   title: 'Organisms/ExperienceCard',
