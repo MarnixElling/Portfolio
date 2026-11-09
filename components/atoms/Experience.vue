@@ -15,7 +15,7 @@ const endDateToShow = computed(() => (
 </script>
 
 <template>
-  <figure class="flex items-start gap-6">
+  <figure class="flex items-start gap-6 w-full">
     <img :src="experience.img" :alt="experience.title" class="size-12 2xs:size-16 print:size-12" />
     <figcaption class="flex flex-col sm:gap-2 print:gap-0">
       <h3>{{ experience.title }}</h3>

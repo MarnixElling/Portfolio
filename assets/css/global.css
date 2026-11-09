@@ -5,6 +5,14 @@
 }
 
 @media print {
+  html {
+    color-scheme: light;
+  }
+
+  html.dark body {
+    background-color: var(--color-white) !important;
+  }
+
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;

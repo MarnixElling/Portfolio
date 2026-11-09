@@ -11,7 +11,7 @@ import { experiences } from '@components/organisms/ExperienceCard/Experiences';
   <Card title="Ervaring">
     <ul class="flex flex-col gap-6 w-full">
       <template v-for="(experience, index) in experiences" :key="experience.title">
-        <li class="w-full">
+        <li class="w-full print:h-[95dvh]">
           <Experience :experience="experience" class="w-full">
             <div class="flex justify-end grow">
               <SpecificationCard class="w-fit">
@@ -23,7 +23,7 @@ import { experiences } from '@components/organisms/ExperienceCard/Experiences';
           </Experience>
           <p v-for="(responsibility, index) in experience.responsibilities" :key="index" class="text-sm mt-5">{{ responsibility }}</p>
         </li>
-        <Divider v-if="index < (experiences.length - 1)" />
+        <Divider v-if="index < (experiences.length - 1)" class="print:hidden" />
       </template>
     </ul>
   </Card>

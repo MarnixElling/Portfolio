@@ -15,23 +15,23 @@ definePageMeta({
 
 <template>
   <NuxtLayout>
-    <div class="flex gap-6 relative flex-col md:flex-row print:flex-col">
-      <div
-        class="
-          flex flex-col h-fit gap-6 grow-0 shrink
-          md:sticky md:top-0 md:basis-11/12 lg:basis-1/2
-          print:h-min
-        "
-      >
-        <ExperienceCard />
-        <EducationCard class="hidden print:flex" />
-      </div>
-      <div class="flex flex-col gap-6 items-center justify-start print:basis-1/2">
+    <div class="flex gap-6 relative flex-col">
+      <div class="flex flex-col gap-6 print:basis-1/2">
         <StacksCard class="grow-0 h-fit print:h-min" />
-        <div class="flex gap-6 w-full flex-col lg:flex-row print:flex-col">
+        <div class="flex gap-6 items-stretch w-full flex-col lg:flex-row print:flex-col">
           <GeneralSkillsCard class="grow" />
           <EducationCard class="grow print:hidden" />
         </div>
+      </div>
+      <div
+        class="
+          flex flex-col h-fit gap-6
+          md:sticky md:top-0 md:basis-11/12 lg:basis-1/2
+          print:h-min print:gap-40
+        "
+      >
+        <EducationCard class="hidden print:flex" />
+        <ExperienceCard />
         <StorybookCard class="print:hidden" />
       </div>
     </div>
